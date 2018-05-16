@@ -1,0 +1,17 @@
+###
+
+POST  https://mysterious-reef-29460.herokuapp.com/api/v1/validate HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "max@test.com",
+  "password": "12345"
+}
+
+###
+
+GET https://mysterious-reef-29460.herokuapp.com/api/v1/user-info/1
+
+###
+
+GET https://mysterious-reef-29460.herokuapp.com/api/v1/news
