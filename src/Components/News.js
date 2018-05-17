@@ -29,6 +29,7 @@ export class News extends Component {
             </div>
           );
         })}
+        <div className="subtitle">Всего новостей: {news.length}</div>
       </div>
     );
   }
