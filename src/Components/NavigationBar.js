@@ -8,7 +8,6 @@ export const NavigationBar = props => {
       document.querySelectorAll(".navbar-burger"),
       0
     );
-
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
       // Add a click event on each of them
@@ -20,6 +19,20 @@ export const NavigationBar = props => {
           // Toggle the class on both the "navbar-burger" and the "navbar-menu"
           $el.classList.toggle("is-active");
           $target.classList.toggle("is-active");
+
+          //hide "navbar-burger" by clicking on the menu item 
+          var $navbarItems = Array.prototype.slice.call(
+            document.querySelectorAll(".navbar-item"),
+            0
+          );
+          $navbarItems.forEach(function($elItem) {
+            $elItem.addEventListener("click", function() {
+            if ($target.classList[1] === 'is-active') {
+              $target.classList = 'navbar-menu'
+              $el.classList = 'navbar-burger burger'
+            }
+            });
+          });
         });
       });
     }
