@@ -1,6 +1,12 @@
 # About app
 
-The test#2: react, redux, react-router, async https://maxpfrontend.ru/vebinary/razbor-testovogo-zadaniya-react-redux-react-router-async/
+## Simple React app
+
+What was done:
+SPA on React, UI Bulma,
+Redux,
+navigation React-router,
+asynchronous requests
 
 # Install
 
